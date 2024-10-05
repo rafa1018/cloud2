@@ -144,6 +144,7 @@ resource "aws_instance" "ec2_public_1" {
   tags = {
     Name = "EC2 Specialization 1"
   }
+  user_data = file("comands.sh")
 }
 
 
@@ -160,6 +161,7 @@ resource "aws_instance" "ec2_public_2" {
   tags = {
     Name = "EC2 Specialization 2"
   }
+   user_data = file("comands.sh")
 }
 
 
